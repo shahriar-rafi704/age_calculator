@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Calculator</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="input-output-wrapper">
+      <div class="input-wrapper">
+        <input type="date" id="date-input" />
+        <div class="custom-select">
+          <div class="select-header" id="planet-select-header">Select Planets</div>
+          <div class="select-options" id="planet-select-options">
+            <label><input type="checkbox" value="none">None</label>
+            <label><input type="checkbox" value="mercury">Mercury</label>
+            <label><input type="checkbox" value="venus">Venus</label>
+            <label><input type="checkbox" value="mars">Mars</label>
+            <label><input type="checkbox" value="jupiter">Jupiter</label>
+            <label><input type="checkbox" value="saturn">Saturn</label>
+            <label><input type="checkbox" value="uranus">Uranus</label>
+            <label><input type="checkbox" value="neptune">Neptune</label>
+          </div>
+        </div>
+        <button id="calc-age-btn">Calculate</button>
+      </div>
+      <div class="output-wrapper">
+        <div>
+          <p>Age on Earth:</p>
+          <span id="years">-</span>
+        </div>
+        <div>
+          <p>Months:</p>
+          <span id="months">-</span>
+        </div>
+        <div>
+          <p>Days:</p>
+          <span id="days">-</span>
+        </div>
+        <div>
+          <p>Age Group:</p>
+          <span id="age-group">-</span>
+        </div>
+         <div id="age-on-planets">
+        </div>
+      </div>
+    </div>
+    <div class="statistics-container">
+      <h2>Statistics</h2>
+      <div>
+        <p>Total Days Alive:</p>
+        <span id="total-days-alive">-</span>
+      </div>
+      <div>
+        <p>Leap Years Experienced:</p>
+        <span id="leap-years">-</span>
+      </div>
+    </div>
+    <div class="social-media-buttons">
+      <i id="share-facebook" class="fab fa-facebook"></i>
+      <i id="share-twitter" class="fab fa-twitter"></i>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
